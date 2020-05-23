@@ -1,0 +1,12 @@
+import axios from 'axios';
+import {AuthKey} from '../keys/AuthKey'
+
+export const baseParams = {
+    part: "snippet",
+    maxResults: 8,
+    key: AuthKey
+  };
+  
+export const youtube = axios.create({
+    baseURL: "https://www.googleapis.com/youtube/v3"
+  });
