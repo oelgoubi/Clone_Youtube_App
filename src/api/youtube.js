@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {AuthKey} from '../keys/AuthKey'
 
+// to avoid params overriding 
 export const baseParams = {
     part: "snippet",
     maxResults: 8,

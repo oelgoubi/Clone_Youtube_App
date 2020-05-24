@@ -1,5 +1,13 @@
 
 - create the component Search bar and connect it with the parent App
 - axios installed 
-- Api request
+- Api request (params : snippet summary about each video , q for query (keyword))
 
+// export without default --> import {module} from ''
+
+
+# what's new !
+in order to play the video that the user click on , we need to pass a method from the app to the videoList then 
+to the videoItem component that will be called directly
+
+#display a Video Player using iframe tag
