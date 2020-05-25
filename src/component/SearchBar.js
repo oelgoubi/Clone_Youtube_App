@@ -1,29 +1,31 @@
-import React from 'react';
-import '../style/SearchBar.css'
+import React,{useState} from 'react';
+import '../style/SearchBar.css';
 
 
-class SearchBar extends React.Component {
-    state = { term :''};
 
-    onInputChange = (e)=>{
+function SearchBar(props) {
+    //state = { term :''};
+   const  [term,setTerm] = useState("");
+   const  onInputChange = (e)=>{
         e.preventDefault();
-        this.setState({term : e.target.value})
+        setTerm(e.target.value)
     }
 
-    onFormSumbit = e =>{
+   const onFormSumbit = e =>{
         e.preventDefault();
-        this.props.onSubmit(this.state.term);
+        props.onSubmit(term);
+        setTerm("")
     }
 
-    render() {
+    
         return (
             <div className="serachbar ui segment">
-                <form className="ui form" onSubmit={this.onFormSumbit}>
+                <form className="ui form" onSubmit={onFormSumbit}>
                     <div className="field">
                         <label style={{color:"red", fontSize:"27px"}}><span>YouGoubi</span></label>
                         <input placeholder="search for a video" name="searchVid" type="text" 
-                        value={this.state.term}
-                        onChange={this.onInputChange}/>
+                        value={term}
+                        onChange={onInputChange}/>
                     </div>
                     <button type="submit" className="ui primary button">
                        Search
@@ -32,7 +34,7 @@ class SearchBar extends React.Component {
             </div>
         );
     }
-}
+
 
 
 export default SearchBar;

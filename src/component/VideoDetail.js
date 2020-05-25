@@ -7,7 +7,7 @@ const VideoDetail = ({ video }) => {
     if (!video) {
         return <div></div>
     }
-    console.log(video.snippet)
+    
     const videoScr = `https://www.youtube.com/embed/${video.id.videoId}`;
     return (
         <div>
@@ -22,7 +22,7 @@ const VideoDetail = ({ video }) => {
                   <div className="ten wide column">
                      <p >{video.snippet.description}</p>
                   </div>
-                  <div class="ui vertical divider one wide column"></div>
+                  <div className="ui vertical divider one wide column"></div>
                   <div className="four wide column">
                      <p >{video.snippet.publishedAt}</p>
                   </div>

@@ -31,8 +31,6 @@ class App extends React.Component {
   }
 
   onVideoClicked = video => {
-
-    console.log('from App', video);
     this.setState({
       selectedVideo: video
     })
