@@ -11,3 +11,5 @@ in order to play the video that the user click on , we need to pass a method fro
 to the videoItem component that will be called directly
 
 #display a Video Player using iframe tag
+
+# defaulting the researsh state

@@ -1,4 +1,10 @@
 
-.serach-bar{
-  width: 300px;
+.serachbar label{
+  color: red;
+}
+
+
+.field label{
+  color: red;
+  
 }
