@@ -13,3 +13,21 @@ to the videoItem component that will be called directly
 #display a Video Player using iframe tag
 
 # defaulting the researsh state
+
+# Deploy the App in Github
+npm install gh-pages --save-dev
+
+# add homepage:"GithubProfile"
+
+"homepage": "http://oelgoubi.github.io/Clone_Youtube_App"
+
+# add 2 scripts 
+
+"scripts": {
+    "predepoly":"npm run build", // build the tree of dep by runing the script build
+    "deploy":"gh-pages -d build",   // deploy
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
