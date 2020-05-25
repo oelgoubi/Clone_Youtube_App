@@ -4,7 +4,6 @@ import '../style/SearchBar.css';
 
 
 function SearchBar(props) {
-    //state = { term :''};
    const  [term,setTerm] = useState("");
    const  onInputChange = (e)=>{
         e.preventDefault();
