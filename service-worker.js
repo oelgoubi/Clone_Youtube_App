@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Clone_Youtube_App/precache-manifest.0775cdf45cbcdd7fc8d699a09dd0ffc8.js"
+  "/Clone_Youtube_App/precache-manifest.a28f4ebf07b7c524d4b7dded32c77098.js"
 );
 
 self.addEventListener('message', (event) => {
