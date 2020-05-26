@@ -31,3 +31,6 @@ npm install gh-pages --save-dev
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   }
+
+and ..
+ npm run deploy

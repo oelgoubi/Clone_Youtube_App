@@ -21,7 +21,7 @@ function SearchBar(props) {
             <div className="serachbar ui segment">
                 <form className="ui form" onSubmit={onFormSumbit}>
                     <div className="field">
-                        <label style={{color:"red", fontSize:"27px"}}><span>YouGoubi</span></label>
+                        <label style={{color:"red", fontSize:"27px", font:"Comic Sans"}}><span>YouGoubi</span></label>
                         <input placeholder="search for a video" name="searchVid" type="text" 
                         value={term}
                         onChange={onInputChange}/>
